@@ -22,9 +22,16 @@
             margin: 0 auto;
             padding: 16px;
         }
+        article{
+            display: flex;
+        }
         img{
             width: 600px;
             height: 300px;
+        }
+
+        .artigo-autor{
+            font-weight: bold;
         }
     </style>
     
@@ -37,13 +44,32 @@
     </header>
   <main>
     <h2>Minha primeira notícia!</h2>
-    <p>Por: Waleska Feltrin.</p>
+    <p class="artigo-autor">Por: Waleska Feltrin.</p>
+    <img src="download (1).png" alt="imagem referente ao logo do colégio">
     <p>Colégio Rural Estadual de Pinhalzinho, esta localizado em uma comunidade do interior de Rio Bonito - Paraná. 
         Entre os trabalhos desenvolvidos, destaca-se os indices alcançados 
         nos ultimos anos com IDEB, prova Paraná e também a aprovação de alunos formados em diversos vestibulares do Estado.</p>
-        <img src="download (1).png" alt="imagem referente ao logo do colégio">
+
+        <button>❤️​<span>0</span></button>
+        <button>👍🏾<span>0</span></button>
+        <article>
+            <img src="" alt="">
+            <div>
+                <h2>meu segundo post</h2>
+                <p class="artigo-autor">Por waleska Feltrin</p>
+                <p>Aqui vou dar dicas de estudo para quem ta se preparando para vestibular e enem</p>
+                <button>❤️​<span>0</span></button>
+                <button>👍🏾<span>0</span></button>
+            </div>
+        </article>
   </main>
 
 
 </body>
+
+<script>
+    const botoes = document.querySelectorAll("button");
+    botoes.forEach(function(botao));
+    
+</script>
 </html>
