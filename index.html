@@ -7,8 +7,8 @@
     <title>Meu site novo!</title>
     <style>
         header{
-            background-color: #183C63;
-            color: #FFFFFF;
+            background-color: #a4bddd;
+            color: #054b74;
             text-align: center;
             max-width: 800px;
             margin: 0 auto;
@@ -16,8 +16,8 @@
 
         }
         main{
-            background-color: #FFFFFF;
-            color: #183C63;
+            background-color: #15658a;
+            color: #000000;
             max-width: 800PX;
             margin: 0 auto;
             padding: 16px;
@@ -26,13 +26,15 @@
             display: flex;
         }
         img{
-            width: 600px;
-            height: 300px;
+            width: 700px;
+            height: 350px;
         }
 
         .artigo-autor{
             font-weight: bold;
         }
+        
+        
     </style>
     
 </head>
@@ -53,11 +55,12 @@
         <button>❤️​<span>0</span></button>
         <button>👍🏾<span>0</span></button>
         <article>
-            <img src="images.jpeg" alt="">
+            <img src="ideb.jpeg" alt="">
             <div>
-                <h2>meu segundo post</h2>
+                <h2> IDEB 2025</h2>
                 <p class="artigo-autor">Por waleska Feltrin</p>
-                <p>Aqui vou dar dicas de estudo para quem ta se preparando para vestibular e enem</p>
+                <p> O IDEB 2025 teve um resultado maravilhoso no municipio de Rio Bonito do Iguaçu, graças aos alunos
+                    do nono ano (que hoje estão na primeira série) que tiveram um desempenho ótimo!! </p>
                 <button>❤️​<span>0</span></button>
                 <button>👍🏾<span>0</span></button>
             </div>
@@ -71,10 +74,10 @@
     const botoes = document.querySelectorAll("button");
     botoes.forEach(function(botao) {
         let curtiu = false;
-        botao.addEventlistener("click, botaoClicado");
+        botao.addEventListener("click", botaoClicado);
         function botaoClicado(){
             console.log("fui clicado");
-            let texto = botao.querySelectorAll("span");
+            let texto = botao.querySelector("span");
             if(curtiu === false){
                 texto.textContent++;
                 curtiu = true;
